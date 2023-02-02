@@ -660,7 +660,7 @@ class ClearingHouse:
     ):
         return await self.send_ixs([
                 self.get_increase_compute_ix(),
-            await self.get_place_perp_order_ix(order_params, maker_info, user_id),
+            await self.get_place_perp_order_ix(order_params, user_id),
         ]
         )
 
